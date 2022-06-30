@@ -1,6 +1,7 @@
-import {FC} from 'react';
+import React, {PropsWithChildren} from 'react';
+import { ScriptProps } from '../../node_modules/next/script';
 
-export const DarkLayout : FC = ({children}) => {
+export const DarkLayout :React.FC<PropsWithChildren<ScriptProps>> = ({children}) =>{
   return (
     <div style={{
         backgroundColor: "rgba(0,0,0,0.3)",

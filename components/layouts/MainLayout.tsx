@@ -1,11 +1,12 @@
-import {FC} from 'react';
+import React, {PropsWithChildren} from 'react';
 import Head from "next/head";
 import styles from "./MainLayout.module.css";
 import {Navbar} from "../Navbar";
+import { ScriptProps } from '../../node_modules/next/script';
 
 
 
-export const MainLayout: FC = ({children}) =>{
+export const MainLayout:React.FC<PropsWithChildren<ScriptProps>> = ({children}) =>{
   return (
 
 
